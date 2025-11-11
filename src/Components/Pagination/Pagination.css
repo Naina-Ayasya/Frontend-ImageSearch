@@ -1,0 +1,9 @@
+.page-btn {
+  background-color: #fff !important;
+  
+}
+
+.page-btn:hover {
+  background-color: #15508b !important;
+  color: #fff !important;
+}

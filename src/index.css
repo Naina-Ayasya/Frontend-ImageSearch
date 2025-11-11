@@ -1,0 +1,54 @@
+/* Remove the Tailwind imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet');
+
+/* Import Bootstrap CSS */
+@import "bootstrap/dist/css/bootstrap.min.css"; /* Add Bootstrap */
+
+/* Custom Font Definitions */
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-urbanist {
+  font-family: 'Urbanist', 'ui-sans-serif', 'system-ui';
+}
+
+/* Global Body Font */
+html, body {
+  font-family: 'Urbanist', 'ui-sans-serif', 'system-ui';
+}
+
+/* Custom Animations for Shutter Effect */
+@layer utilities {
+  @keyframes shutter-down {
+    0% {
+      max-height: 0;
+    }
+    100% {
+      max-height: 418px; /* adjust based on content */
+    }
+  }
+
+  @keyframes shutter-up {
+    0% {
+      max-height: 418px;
+    }
+    100% {
+      max-height: 0;
+    }
+  }
+
+  .shutter-down {
+    animation: shutter-down 0.8s ease-out forwards;
+    overflow: hidden;
+  }
+
+  .shutter-up {
+    animation: shutter-up 0.8s ease-in forwards;
+    overflow: hidden;
+  }
+}
+
+
+

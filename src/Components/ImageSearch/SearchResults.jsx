@@ -631,9 +631,9 @@ const handleImageSetter = async (file) =>{
 
           </div>
           <Pagination
-          filteredResults={filteredResults}
-          ITEMS_PER_PAGE={ITEMS_PER_PAGE}
-          onPageChange={(products) => setCurrentProducts(products)}
+          totalPages={totalPages}
+          currentPage={currentPage}
+          goToPage={(page) => setCurrentPage(page)}
           />
 
            {/* <div className="d-flex justify-content-end gap-2 mt-4 flex-wrap" style={{ marginTop: '16px', gap: '8px', cursor:'pointer' }}>

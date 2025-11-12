@@ -1,9 +1,43 @@
-.page-btn {
+.pagination-btn {
   background-color: #fff !important;
-  
+  color: black;
 }
 
-.page-btn:hover {
+.pagination-btn:hover {
   background-color: #15508b !important;
   color: #fff !important;
+}
+
+.pagination-btn.btn-primary {
+    --bs-btn-color: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    /* --bs-btn-hover-color: #fff; */
+    --bs-btn-hover-bg: #0d6efd;
+    --bs-btn-hover-border-color: #0d6efd;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #958f8f;
+    --bs-btn-active-bg: #0d6efd;
+    --bs-btn-active-border-color: #0d6efd;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #0d6efd;
+    --bs-btn-disabled-bg: #958f8f;
+    --bs-btn-disabled-border-color: #0d6efd;
+    --bs-gradient: none;
+}
+
+/* 🔹 Disabled pagination buttons */
+.pagination-btn:disabled,
+.pagination-btn[disabled] {
+  background-color: #fff !important;
+  color: black !important;
+  border-color: #0d6efd !important;
+  opacity: 1 !important; /* remove Bootstrap’s fade */
+  cursor: not-allowed;
+}
+
+/* Optional hover override — to ensure consistent look even if hovered */
+.pagination-btn:disabled:hover {
+  background-color: #fff !important;
+  color: black !important;
+  border-color: #0d6efd !important;
 }
